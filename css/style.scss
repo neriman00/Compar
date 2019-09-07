@@ -1,0 +1,71 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+/*navbar*/
+.sidebar{
+    height: 100vh;
+    background:#2a1b3d;
+}
+.bottom-border{
+    border-bottom: 1px groove #eee;
+}
+.sidebar-link{
+    font-size: 15px;
+   font-weight: 500;
+   transition: all .4s;
+}
+.sidebar-link:hover{
+    background-color: rgb(185, 178, 184);
+    border-radius: 5px;
+}
+
+.HeaderImg{
+    background-image: url(../image/team1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 18rem 0;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(114, 109, 139);
+        opacity: .4;
+        z-index: 99;
+    }
+}
+.top-menu{
+}
+.headerText{
+    color: white;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    span{
+        font-family: 'Quicksand', sans-serif;
+    }
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        padding: 0 15px;
+        font-size: 50px;
+    }
+
+}
+/*end of navbar*/
+@media (max-width:768px){
+    .sidebar{
+        position: static !important;
+        height: auto !important; 
+    }
+    .top-navbar{
+        position: static !important;
+    }
+    .registration{
+        margin-top: 100px;
+      
+    } 
+}
